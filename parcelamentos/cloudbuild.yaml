@@ -1,7 +1,0 @@
-steps:
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'gcr.io/YOUR_PROJECT_ID/my-flask-app', '.' ]
-
-
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', 'my-flask-app', '--image', 'gcr.io/YOUR_PROJECT_ID/my-flask-app', '--platform', 'managed', '--region', 'YOUR_REGION', '--allow-unauthenticated']
